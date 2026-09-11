@@ -50,7 +50,87 @@
     </button>
   </header>
 
+  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <nav>
+      <a href="index.html">НАЧАЛО</a>
+      <a href="#trainings">ТАНЦОВИ КЛАСОВЕ</a>
+      <a href="#trainings">УСЛУГИ</a>
+      <a href="#trainings">ПРОГРАМИ ЗА РАЗВИТИЕ</a>
+      <a href="#trainings">VS TIMES</a>
+      <a href="#about">ЗА НАС</a>
+    </nav>
+  </div>
 
+ <main>
+    <section id="hero" class="hero">
+      <div class="hero-carousel">
+        <div id="carouselTrack" class="carousel-track"></div>
+        <div id="carouselDots" class="carousel-dots" role="tablist" aria-label="Слайдове"></div>
+      </div>
+
+      <div id="heroLoader" class="hero-loader">
+        <div class="hero-logo">
+          <img src="./assets/big_logo_3.png" alt="VS Dance Studios — Студия за съвременни танци">
+        </div>
+
+        <div class="loader">
+          <div class="loader-row">
+            <span>ЗАРЕЖДАНЕ</span>
+            <span id="loaderPercent">0%</span>
+          </div>
+          <div class="loader-track">
+            <div id="loaderBar"></div>
+          </div>
+        </div>
+      </div>
+
+    <section id="trainings" class="trainings-section">
+      <div class="section-head">
+        <div>
+          <h1>Открий подходящата<br><em>тренировка</em></h1>
+        </div>
+        <p class="section-intro">
+          Избери своя стил, намери подходящия треньор и запази своето място.
+        </p>
+      </div>
+
+      <div class="filters">
+        <div class="filter-group" data-group="gender">
+          <p class="filter-label">ПОЛ</p>
+          <div class="filter-options">
+            <button type="button" class="filter-btn is-active" data-value="all">ВСИЧКИ</button>
+            <button type="button" class="filter-btn" data-value="male">МОМЧЕТА</button>
+            <button type="button" class="filter-btn" data-value="female">МОМИЧЕТА</button>
+          </div>
+        </div>
+
+        <div class="filter-group" data-group="age">
+          <p class="filter-label">ВЪЗРАСТ</p>
+          <div class="filter-options">
+            <button type="button" class="filter-btn is-active" data-value="all">ВСИЧКИ</button>
+            <button type="button" class="filter-btn" data-value="adult">ВЪЗРАСТНИ</button>
+            <button type="button" class="filter-btn" data-value="kids">ДЕЦА</button>
+          </div>
+        </div>
+
+        <div class="filter-group" data-group="style">
+          <p class="filter-label">СТИЛ</p>
+          <div class="filter-options">
+            <button type="button" class="filter-btn is-active" data-value="all">ВСИЧКИ</button>
+            <button type="button" class="filter-btn" data-value="hip-hop">HIP HOP</button>
+            <button type="button" class="filter-btn" data-value="rave">RAVE</button>
+            <button type="button" class="filter-btn" data-value="jazz-funk">JAZZ FUNK</button>
+            <button type="button" class="filter-btn" data-value="contemporary">CONTEMPORARY</button>
+            <button type="button" class="filter-btn" data-value="street-dance">STREET DANCE</button>
+          </div>
+        </div>
+
+        <p id="filterCount" class="filter-count"></p>
+      </div>
+
+      <div id="trainingGrid" class="training-grid"></div>
+    </section>      
+ </main>
 
   <footer class="site-footer">
     <div class="footer-inner">

@@ -1,3 +1,123 @@
+const trainings = [
+  {
+    id: 1,
+    title: "STREET RAVE",
+    short: "STREET RAVE",
+    image: "./assets/class-street-rave.jpg",
+    trainer: "Ардиан Радев",
+    schedule: ["Понеделник · 18:00"],
+    capacity: 12,
+    available: 6,
+    gender: "all",
+    age: "adult",
+    style: "rave"
+  },
+  {
+    id: 2,
+    title: "HIP-HOP COLLABO",
+    short: "LADIES HIP-HOP",
+    image: "./assets/class-hip-hop-collabo.jpg",
+    trainer: "VS Dance Studios",
+    schedule: ["Вторник · 19:00"],
+    capacity: 12,
+    available: 6,
+    gender: "female",
+    age: "adult",
+    style: "hip-hop"
+  },
+  {
+    id: 3,
+    title: "HIP-HOP FOR KIDS",
+    short: "HIP-HOP KIDS",
+    image: "./assets/class-dancing-kids.jpg",
+    trainer: "Кристин Йотова",
+    schedule: ["Събота · 12:00"],
+    capacity: 15,
+    available: 8,
+    gender: "all",
+    age: "kids",
+    style: "hip-hop"
+  },
+  {
+    id: 4,
+    title: "CHOREOGRAPHY & TECHNIQUE",
+    short: "CHOREO & TECH",
+    image: "./assets/class-choreography-and-technique.jpg",
+    trainer: "Виктория Димитрова",
+    schedule: ["Сряда · 20:00"],
+    capacity: 12,
+    available: 6,
+    gender: "all",
+    age: "adult",
+    style: "contemporary"
+  },
+  {
+    id: 5,
+    title: "SEXY AND CONFIDENT",
+    short: "SEXY & CONFIDENT",
+    image: "./assets/class-sexy-and-confident.jpg",
+    trainer: "Анна-Мария Панталеева",
+    schedule: ["Четвъртък · 20:00"],
+    capacity: 12,
+    available: 6,
+    gender: "female",
+    age: "adult",
+    style: "jazz-funk"
+  },
+  {
+    id: 6,
+    title: "HEELS STAGE",
+    short: "HEELS STAGE",
+    image: "./assets/class-heels-stage.jpg",
+    trainer: "Ива Калицова",
+    schedule: ["Петък · 19:00"],
+    capacity: 12,
+    available: 6,
+    gender: "female",
+    age: "adult",
+    style: "jazz-funk"
+  },
+  {
+    id: 7,
+    title: "HEELS - SEXY QUEENS",
+    short: "SEXY QUEENS",
+    image: "./assets/class-heels-sexy-queens.jpg",
+    trainer: "Виктория Димитрова",
+    schedule: ["Петък · 20:00"],
+    capacity: 12,
+    available: 6,
+    gender: "female",
+    age: "adult",
+    style: "jazz-funk"
+  },
+  {
+    id: 8,
+    title: "POPPING",
+    short: "POPPING",
+    image: "./assets/class-popping.jpg",
+    trainer: "Симеон Йорданов",
+    schedule: ["Вторник · 20:00"],
+    capacity: 12,
+    available: 6,
+    gender: "all",
+    age: "adult",
+    style: "street-dance"
+  },
+  {
+    id: 9,
+    title: "BEGINNER HIP-HOP",
+    short: "HIP-HOP",
+    image: "./assets/class-beginner-hip-hop.jpg",
+    trainer: "Божидар Костадинов",
+    schedule: ["Сряда · 19:00"],
+    capacity: 12,
+    available: 6,
+    gender: "all",
+    age: "adult",
+    style: "hip-hop"
+  }
+];
+
 const heroSlides = [
   {
     image: "./assets/carousel01.jpg",
