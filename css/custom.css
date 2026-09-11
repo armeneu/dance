@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+
+:root {
+  --yellow: #FFD400;
+  --black: #000;
+  --white: #fff;
+  --muted: rgba(255,255,255,.58);
+  --border: rgba(255,255,255,.11);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: #000;
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+}
