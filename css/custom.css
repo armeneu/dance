@@ -920,11 +920,11 @@ body.menu-open { overflow: hidden; }
   .trainings-section { padding: 85px 18px; }
 
   .section-head { margin-bottom: 38px; gap: 25px; }
-  .section-head h1 { font-size: clamp(3.3rem, 15vw, 5.4rem); }
+  .section-head h1 { font-size: clamp(3.3rem, 11vw, 5.4rem); }
   .section-intro { font-size: 1.15rem; }
 
   .training-grid { grid-template-columns: 1fr; }
-  .training-image { height: 280px; }
+  /* .training-image { height: 280px; } */
 
   .filters {
     padding: 24px 18px 20px;
