@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>VS Dance Studios</title>
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            condensed: ["Barlow Condensed", "sans-serif"]
+          },
+          colors: {
+            yellow: "#FFD400"
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+  <header id="header" class="site-header">
+    <a href="#hero" class="header-logo">
+      <img src="./assets/small_logo_1.png" alt="VS Dance Studios">
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="index.html">НАЧАЛО</a>
+      <a href="#trainings">ТАНЦОВИ КЛАСОВЕ</a>
+      <a href="#trainings">УСЛУГИ</a>
+      <a href="#trainings">ПРОГРАМИ ЗА РАЗВИТИЕ</a>
+      <a href="#trainings">VS TIMES</a>
+      <a href="#about">ЗА НАС</a>
+    </nav>
+
+    <button id="menuButton" class="hamburger" aria-label="Отвори меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="./assets/small_logo_1.png" alt="VS Dance Studios">
+        <p class="footer-desc">
+          Студия за съвременни танци, основана от Victoria Dimitrova Goldy през 2009 г.
+          Повече от 15 години танц, страст и победи.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Навигация">
+        <h3>НАВИГАЦИЯ</h3>
+        <ul>
+          <li><a href="#hero">Начало</a></li>
+          <li><a href="#trainings">Групи</a></li>
+          <li><a href="#trainings">Разписание</a></li>
+          <li><a href="#about">Инструктори</a></li>
+          <li><a href="#about">За нас</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Стилове">
+        <h3>СТИЛОВЕ</h3>
+        <ul>
+          <li><a href="#trainings">Hip Hop</a></li>
+          <li><a href="#trainings">Rave</a></li>
+          <li><a href="#trainings">Breaking</a></li>
+          <li><a href="#trainings">Jazz Funk</a></li>
+          <li><a href="#trainings">Contemporary</a></li>
+          <li><a href="#trainings">Zumba</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h3>КОНТАКТИ</h3>
+        <ul class="footer-contact">
+          <li>
+            <span class="footer-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            </span>
+            София, бул. Витоша 42
+          </li>
+          <li>
+            <span class="footer-icon">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.6 21 3 13.4 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </span>
+            <a href="tel:+359881234567">+359 88 123 4567</a>
+          </li>
+          <li>
+            <span class="footer-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </span>
+            <a href="mailto:info@vs.dance">info@vs.dance</a>
+          </li>
+          <li>
+            <span class="footer-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+            </span>
+            Пон–Пет: 09:00–22:00
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 VS Dance Studios. Всички права запазени.</span>
+      <img class="footer-watermark" src="./assets/small_logo_1.png" alt="" aria-hidden="true">
+    </div>
+  </footer>
+
+
+
+  <div id="toast" class="toast"></div>
+  <script src="./js/app.js"></script>
+</body>
+</html>
