@@ -17,3 +17,57 @@ body {
   color: #fff;
   font-family: "Barlow Condensed", sans-serif;
 }
+
+body.menu-open { overflow: hidden; }
+
+.site-header {
+  position: fixed;
+  z-index: 100;
+  inset: 0 0 auto;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 38px;
+  transition: background .3s ease, backdrop-filter .3s ease;
+}
+
+.site-header.scrolled {
+  background: rgba(0,0,0,.72);
+  backdrop-filter: blur(12px);
+}
+
+.header-logo img {
+  display: block;
+  width: auto;
+  height: 48px;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.desktop-nav a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.desktop-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -7px;
+  height: 2px;
+  background: var(--yellow);
+  transition: right .25s ease;
+}
+
+.desktop-nav a:hover { color: var(--yellow); }
+.desktop-nav a:hover::after { right: 0; }
