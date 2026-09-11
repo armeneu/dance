@@ -830,3 +830,152 @@ body.menu-open { overflow: hidden; }
   opacity: 1;
   transform: translateY(0);
 }
+
+
+@media (max-width: 1200px) {
+  .desktop-nav a {
+      position: relative;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+  }
+}
+
+@media (max-width: 1100px) {
+  .desktop-nav a {
+      position: relative;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .site-header { padding: 0 22px; }
+  .desktop-nav { display: none; }
+  .hamburger { display: block; }
+
+  .training-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .section-head { align-items: flex-start; flex-direction: column; }
+
+  .site-footer { padding: 70px 22px 0; }
+  .footer-inner {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 50px 40px;
+    padding-bottom: 55px;
+  }
+}
+
+@media (max-width: 920px) {
+  .carousel-slide {
+    background-position: 70% center;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header { height: 70px; }
+  .header-logo img { height: 38px; }
+
+  .carousel-content {
+    padding: 96px 18px 92px;
+    align-items: flex-end;
+  }
+
+  .carousel-text { max-width: 100%; }
+
+  .carousel-list {
+    margin-top: 26px;
+    gap: 12px;
+  }
+
+  .carousel-actions { margin-top: 28px; }
+
+  .carousel-btn {
+    flex: 1 1 auto;
+    min-height: 50px;
+    padding: 0 22px;
+    font-size: .92rem;
+  }
+
+  .carousel-slide::before {
+    background:
+      linear-gradient(0deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.75) 45%, rgba(0,0,0,.35) 100%);
+  }
+
+  .carousel-dots { bottom: 20px; }
+
+  .hero-logo { width: 96vw; }
+
+  .loader {
+    margin-top: 9px;
+    width: 58vw;
+  }
+
+  .scroll-hint { display: none; }
+
+  .trainings-section { padding: 85px 18px; }
+
+  .section-head { margin-bottom: 38px; gap: 25px; }
+  .section-head h1 { font-size: clamp(3.3rem, 15vw, 5.4rem); }
+  .section-intro { font-size: 1.15rem; }
+
+  .training-grid { grid-template-columns: 1fr; }
+  .training-image { height: 280px; }
+
+  .filters {
+    padding: 24px 18px 20px;
+    margin-bottom: 32px;
+  }
+
+  .filter-group { margin-bottom: 24px; }
+
+  .filter-btn {
+    min-height: 46px;
+    padding: 10px 18px;
+    font-size: .95rem;
+  }
+
+  .simple-section {
+    min-height: 50vh;
+    padding: 80px 18px;
+    flex-direction: column;
+  }
+
+  .simple-section h2 { font-size: clamp(4rem, 18vw, 6rem); }
+
+  .mobile-menu a { font-size: clamp(2rem, 13vw, 2rem); }
+
+  .site-footer { padding: 60px 18px 0; }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    padding-bottom: 45px;
+  }
+
+  .footer-desc { font-size: 1.15rem; }
+  .footer-col a,
+  .footer-contact li { font-size: 1.2rem; }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding-bottom: 26px;
+    font-size: 1rem;
+  }
+
+  .footer-watermark { height: 80px; opacity: .06; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+}
