@@ -305,7 +305,7 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
 let currentSlide = 0;
 let carouselTimer = null;
 
-function createSlide(slide) {
+function createSlide(slide, index) {
   const el = document.createElement("article");
   el.className = "carousel-slide";
   el.style.backgroundImage = `url("${slide.image}")`;
@@ -318,8 +318,11 @@ function createSlide(slide) {
         <p class="carousel-subtitle">${slide.subtitle}</p>
 
         <div class="carousel-actions">
-          ${slide.actions.map(action => `
-            <a class="carousel-btn${action.primary ? " primary" : ""}" href="${action.href}">
+          ${slide.actions.map((action, i) => `
+            <a class="carousel-btn${action.primary ? " primary" : ""}"
+               href="${action.href}"
+               data-cta="${action.label}"
+               data-cta-index="${i}">
               ${action.label}
             </a>`).join("")}
         </div>
@@ -327,12 +330,31 @@ function createSlide(slide) {
     </div>
   `;
 
+  el.querySelectorAll(".carousel-btn").forEach((button, i) => {
+    button.addEventListener("click", () => {
+      pushCtaEvent(slide.actions[i], slide, index);
+    });
+  });
+
   return el;
 }
 
+function pushCtaEvent(action, slide, index) {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "hero_cta_click",
+    cta_label: action.label,
+    cta_url: action.href,
+    cta_type: action.primary ? "primary" : "secondary",
+    slide_title: slide.title,
+    slide_index: index
+  });
+}
+
+
 function renderCarousel() {
   heroSlides.forEach((slide, index) => {
-    const el = createSlide(slide);
+    const el = createSlide(slide, index);
     if (index === 0) el.classList.add("is-active");
     carouselTrack.appendChild(el);
 
